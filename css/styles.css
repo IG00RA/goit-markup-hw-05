@@ -359,6 +359,56 @@ img {
 .footer-contact:focus {
   color: var(--secondary-link-color);
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-adress-container {
+  margin-right: 70px;
+}
+.footer-social {
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  width: 206px;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-link {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--bcgnd-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--secondary-link-color);
+  fill: var(--bcgnd-color);
+}
+
+.footer-social-tittle {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bcgnd-color);
+  margin-bottom: 20px;
+}
+
 /* Portfolio */
 .filter-list {
   display: flex;
