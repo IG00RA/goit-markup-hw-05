@@ -54,7 +54,7 @@
         <section class="hero section overlay">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn" type="button">Замовити послугу</button>
+                <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="features section">
@@ -116,13 +116,22 @@
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="development-list section-gap">
                     <li class="development-item list">
-                        <img src="./images/back-end.jpg" width="370" alt="Розробка серверної частини сайту">
+                        <img class="development-img" src="./images/back-end.jpg" width="370" alt="Десктопні додатки">
+                        <div class="development-wrapper">
+                            <h3 class="development-tittle">Десктопні додатки</h3>
+                        </div>
                     </li>
                     <li class="development-item list">
-                        <img src="./images/front-end.jpg" width="370" alt="Розробка користувацького інтерфейсу">
+                        <img class="development-img" src="./images/front-end.jpg" width="370" alt="Мобільні додатки">
+                        <div class="development-wrapper">
+                            <h3 class="development-tittle">Мобільні додатки</h3>
+                        </div>
                     </li>
                     <li class="development-item list">
-                        <img src="./images/style.jpg" width="370" alt="Стилізація сайтів">
+                        <img class="development-img" src="./images/style.jpg" width="370" alt="Дизайнерські рішення">
+                        <div class="development-wrapper">
+                            <h3 class="development-tittle">Дизайнерські рішення</h3>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -352,6 +361,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="close-icon" width="18" height="18">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
