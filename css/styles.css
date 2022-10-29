@@ -102,6 +102,7 @@ img {
 }
 .header-link {
   color: var(--tittle-text-color);
+  transition: color var(--time-delay) var(--timing-function);
 }
 .header-contact {
   color: var(--most-text-color);
@@ -368,11 +369,11 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--svg-main-color);
-  transition: background-color var(--time-delay) var(--timing-function);
+  transition: background-color var(--time-delay) var(--timing-function),
+    color var(--time-delay) var(--timing-function);
 }
 .team-social-icon {
   fill: currentColor;
-  transition: fill var(--time-delay) var(--timing-function);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -395,7 +396,6 @@ img {
     border var(--time-delay) var(--timing-function);
 }
 .clients-icon {
-  transition: fill var(--time-delay) var(--timing-function);
   fill: currentColor;
 }
 .clients-link:hover,
@@ -440,6 +440,7 @@ img {
 }
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time-delay) var(--timing-function);
 }
 .footer-contact:hover,
 .footer-contact:focus {
